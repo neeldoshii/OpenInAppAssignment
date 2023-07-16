@@ -8,12 +8,13 @@
 
 
     <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragmentContainerView"
-        android:name="androidx.navigation.fragment.NavHostFragment"
+
+    android:id="@+id/fa"
 
         android:layout_width="match_parent"
         android:layout_weight="1"
         android:layout_height="match_parent"
-        app:navGraph="@navigation/nav_host"
-        app:defaultNavHost="true"/>
+
+        android:name="com.example.openinapp.fragments.DashboardFragment"
+        tools:layout="@layout/fragment_dashboard" />
 </androidx.constraintlayout.widget.ConstraintLayout>

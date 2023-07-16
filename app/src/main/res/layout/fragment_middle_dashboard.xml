@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F5F5F5"
-    app:circularflow_radiusInDP="200dp"
-    tools:context=".DashboardFragmentFront">
+
+    tools:context=".fragments.MiddleDashboardFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
@@ -35,7 +35,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
-    <androidx.viewpager2.widget.ViewPager2
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/horizontalDashboardRV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
